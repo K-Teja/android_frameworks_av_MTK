@@ -685,7 +685,7 @@ void SampleTable::buildSampleEntriesTable() {
                                 INT32_MAX : uint32_t(-compTimeDelta)))
                         || (compTimeDelta > 0 &&
                                 sampleTime > UINT32_MAX - compTimeDelta)) {
-                    ALOGE("%llu + %d would overflow, clamping",
+                    ALOGE("%11u + %d would overflow, clamping",
                             sampleTime, compTimeDelta);
                     if (compTimeDelta < 0) {
                         sampleTime = 0;

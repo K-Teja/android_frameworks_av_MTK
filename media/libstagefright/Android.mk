@@ -173,7 +173,7 @@ ifeq ($(TARGET_HAS_LEGACY_HSR),true)
 LOCAL_CFLAGS += -DLEGACY_HSR
 endif
 
-LOCAL_CFLAGS += -Wno-multichar -Werror -Wno-error=deprecated-declarations -Wall
+LOCAL_CFLAGS += -Wno-multichar -Wno-error=deprecated-declarations -Wall
 
 LOCAL_C_INCLUDES += $(call project-path-for,qcom-media)/mm-core/inc
 
